@@ -1,0 +1,69 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+}
+*{
+  color: blanchedalmond;
+  background-color: black;
+
+  box-sizing: border-box;
+  
+}
+.App{
+  
+  display: flex;
+  flex-direction: column;
+}
+.App >div{
+  border: 1px solid #f1f1f1;
+  border-radius: 2rem;
+  height: 40vh;
+  padding: 2rem;
+}
+h1{
+  width: 100%;
+}
+input{
+  width: 100%;
+  border: 1px solid #f1f1f1;
+  padding: 0.5rem;
+  color: #f1f1f1;
+}
+button{
+  margin-top: 1rem;
+  color: black;
+}
+#chatDiv{
+  width: 50vw;
+  display: flex;
+  height: 70vh;
+  align-items: center;
+}
+
+#chatText{
+  margin-left: 5rem;
+  border-left: 1px solid #f1f1f1;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+#chatText::-webkit-scrollbar {
+  max-width: 12px;               /* width of the entire scrollbar */
+  padding: 0.9rem;
+}
+
+#chatText::-webkit-scrollbar-track {
+   background: #191919;   /*     color of the tracking area */
+  
+}
+
+#chatText::-webkit-scrollbar-thumb {
+  background-color: #f1f1f1;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 1px solid #191919;  /* creates padding around scroll thumb */
+}
