@@ -14,7 +14,7 @@ io.on('connection', socket =>{
 
     socket.on('set_username', username =>{
         socket.data.username = username;
-        
+        io.emit('get_username',{author:socket.data.username})
     })
 
     socket.on('message', text =>{

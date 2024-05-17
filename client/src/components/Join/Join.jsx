@@ -14,7 +14,7 @@ export default function Join({setChatVisibility, setSocket}) {
         setSocket(socket);
     }
   return (
-    <div>
+    <div className='loginDiv'>
       <h1>JOIN</h1>
       <input type="text" ref={usernameRef} placeholder='Nome de Usuario'   
         onKeyDown={(e) => { 
